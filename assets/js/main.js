@@ -17,7 +17,7 @@ menuIcon.addEventListener("click", (e) => {
 });
 
 // Add active class to nav links
-const navLinks = Array.from(document.querySelectorAll("header nav .nav-link"));
+const navLinks = Array.from(document.querySelectorAll("header nav .nav-link , header .btns > a"));
 navLinks.forEach((item, index) => {
   item.addEventListener("click", (e) => {
     nav.classList.remove("active");
@@ -30,7 +30,7 @@ navLinks.forEach((item, index) => {
 });
 
 
-
+// Fac Section  Accordion  
 var acc = document.getElementsByClassName("accordion");
 var i;
 var len = acc.length;

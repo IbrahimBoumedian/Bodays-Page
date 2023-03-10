@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/tailwindOutput.css" />
+    <link rel="stylesheet" href="dist/tailwindOutput.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/compClass.css" />
     <title>Bodays</title>
@@ -41,15 +41,46 @@
   <body>
     <!--===== HEADER =====-->
     <header class="wow animate__animated animate__fadeInDown z-50">
-      <div class="container flex items-center justify-between">
+      <div class="container flex items-center justify-between gap-3">
         <img class="logo" src="assets/img/kalLogo.png" alt="" />
-        <nav class="m-0 p-0 flex items-center gap-4">
-          <a href="index.html" class="nav-link active">home</a>
-          <a href="#services" class="nav-link">services</a>
-          <a href="#about" class="nav-link">about</a>
-          <a href="#work" class="nav-link">work</a>
-          <a href="#faq" class="nav-link">FAQ</a>
-          <a href="#contact" class="nav-link">Contact</a>
+        <nav class="m-0 p-0 flex justify-center items-center flex-1">
+          <div
+            class="links m-0 p-0 flex items-center justify-center gap-4 flex-1"
+          >
+            <a href="index.html" class="nav-link active">home</a>
+            <a href="#services" class="nav-link">services</a>
+            <a href="#about" class="nav-link">about</a>
+            <a href="#work" class="nav-link">work</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+          </div>
+          <div class="btns flex gap-3 flex-wrap justify-center">
+            <a href="tel:(475) 250-1150 " class="phone-btn" role="button">
+              <span class="flex items-center gap-3">
+                <div
+                  style="
+                    width: 20px !important;
+                    height: 20px !important ;
+                    min-width: 30px !important;
+                    min-height: 30px !important;
+                    padding: 5px !important;
+                  "
+                  class="comp-rounded-icon"
+                  href=""
+                >
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+                <span class="">(203) 522-0744</span>
+              </span>
+            </a>
+            <a
+              href="#contact"
+              class="quote-btn flex justify-center items-center"
+            >
+              <span class="flex items-center justify-center">
+                <span class="">Get A Fast Quote </span>
+              </span>
+            </a>
+          </div>
         </nav>
         <ion-icon
           name="menu-outline"
@@ -114,7 +145,7 @@
     <section
       style="padding-block: 200px !important"
       id="services"
-      class="section-services section-pad section-bg bg-white"
+      class="section-services items-stretch section-pad section-bg bg-white"
     >
       <div class="container">
         <div class="box-title mb-10">
@@ -142,77 +173,111 @@
           </div>
         </div>
 
-        <div
-          class="row services-box items-center justify-center justify-items-center"
-        >
+        <div class="services-items mt-7">
           <div
-            data-wow-duration=".9s"
-            data-wow-delay=".1s"
-            class="wow animate__animated animate__fadeInUp col-lg-4"
+            class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 gap-y-6"
           >
-            <div class="service-item p-5 rounded-lg shadow-sm bg-gray-100">
-              <img src="assets/img/house.png" class="mb-3" alt="" />
-              <b class="service-name fw-bold mb-3">House Cleaning</b>
-              <p class="hover-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                deleniti exercitationem minus saepe nam reiciendis
-                necessitatibus quidem at itaque ducimus? Libero dolore, ea
-                necessitatibus eius voluptate doloribus commodi soluta
-                accusantium?
-              </p>
+            <div
+              style="background-image: url(assets/img/Concrete\ Cleaning.jpg)"
+              data-wow-duration=".7s" data-wow-delay=".1s"
+              class="wow animate__animated animate__backInUp shadow-lg service-item"
+            >
+              <div class="overlay"></div>
+              <div class="content">
+                <h3 class="capitalize">Concrete Cleaning</h3>
+                <div class="service-content">
+                  <p>
+                    Concrete surfaces are frequently overlooked when it comes to
+                    exterior cleaning. Although you might think they don’t
+                    affect the appearance of your house, they can make or break
+                    your home’s curb appeal. If your concrete surfaces have oil
+                    stains, weed, mold, or grass growing between the joints, it
+                    will definitely catch your visitors’ attention in a bad way.
+                    Our power washing is effective on different surfaces,
+                    including concrete. We can remove the grime, dirt, and oil
+                    from all the surfaces, including between the cracks, if
+                    there are any.
+                  </p>
+                  <a href="#" class="tw-btn capitalize">Concrete Cleaning</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            data-wow-duration=".9s"
-            data-wow-delay=".2s"
-            class="wow animate__animated animate__fadeInUp col-lg-4"
-          >
-            <div class="service-item p-5 rounded-lg shadow-sm bg-gray-100">
-              <img src="assets/img/mall.png" class="mb-3" alt="" />
-              <b class="service-name fw-bold mb-3"> FAIRFIELD COUNTY</b>
-              <p class="hover-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                deleniti exercitationem minus saepe nam reiciendis
-                necessitatibus quidem at itaque ducimus? Libero dolore, ea
-                necessitatibus eius voluptate doloribus commodi soluta
-                accusantium?
-              </p>
+
+            <div
+              style="background-image: url(assets/img/service-2.jpg)"
+              data-wow-duration=".7s" data-wow-delay=".2s"
+              class="wow animate__animated animate__backInUp shadow-lg service-item"
+            >
+              <div class="overlay"></div>
+              <div class="content">
+                <h3 class="capitalize">Driveway Cleaning</h3>
+                <div class="service-content">
+                  <p>
+                    The driveway is always exposed to external harsh elements
+                    such as smoke from vehicle combustion, air pollution, rain,
+                    snow, and UV. Those elements can deteriorate the driveway
+                    material, discolor it, and cause the need for a replacement
+                    sooner than expected. Our power washing service can remove
+                    any trace of stubborn dirt, oil stains, and harmful growths.
+                    We will return it to its original appearance and make it
+                    look brand new. Your driveway is one of the first things
+                    visitors notice when entering your home, so make sure it
+                    looks clean and in good condition.
+                  </p>
+                  <a href="#" class="tw-btn capitalize">Driveway Cleaning</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            data-wow-duration=".9s"
-            data-wow-delay=".3"
-            class="wow animate__animated animate__fadeInUp col-lg-4"
-          >
-            <div class="service-item p-5 rounded-lg shadow-sm bg-gray-100">
-              <img src="assets/img/estate.png" class="mb-3" alt="" />
-              <b class="service-name fw-bold mb-3">RESIDENTIAL </b>
-              <p class="hover-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                deleniti exercitationem minus saepe nam reiciendis
-                necessitatibus quidem at itaque ducimus? Libero dolore, ea
-                necessitatibus eius voluptate doloribus commodi soluta
-                accusantium?
-              </p>
+            <div
+              style="background-image: url(assets/img/service-3.jpg)"
+              data-wow-duration=".7s" data-wow-delay=".3s"
+              class="wow animate__animated animate__backInUp shadow-lg service-item"
+            >
+              <div class="overlay"></div>
+              <div class="content">
+                <h3 class="capitalize">Deck Cleaning</h3>
+                <div class="service-content">
+                  <p>
+                    A deck is one of your home’s most useful and entertaining
+                    areas, and you can decorate it with your style and transform
+                    it into a personal outdoor retreat or use it to gather
+                    family reunions and parties with your friends. No matter how
+                    you choose to use your deck, it’s crucial that you keep it
+                    in good condition and clean it regularly. Our power washing
+                    service is the best way to clean all your decking without
+                    being too aggressive on the surface. We adjust the pressure
+                    and clean every trace of grime and dirt. Once we finish,
+                    your deck will look great and ready to be the host of many
+                    parties.
+                  </p>
+                  <a href="#" class="tw-btn capitalize">Deak Cleaning</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            data-wow-duration=".9s"
-            data-wow-delay=".4s"
-            class="wow animate__animated animate__fadeInUp col-lg-4"
-          >
-            <div class="service-item p-5 rounded-lg shadow-sm bg-gray-100">
-              <img src="assets/img/pressure water.png" class="mb-3" alt="" />
-              <b class="service-name fw-bold mb-3"
-                >PRESSURE WASHING SERVICES
-              </b>
-              <p class="hover-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                deleniti exercitationem minus saepe nam reiciendis
-                necessitatibus quidem at itaque ducimus? Libero dolore, ea
-                necessitatibus eius voluptate doloribus commodi soluta
-                accusantium?
-              </p>
+            <div
+              style="background-image: url(assets/img/service-4.jpeg)"
+              data-wow-duration=".7s" data-wow-delay=".4s"
+              class="wow animate__animated animate__backInUp shadow-lg service-item"
+            >
+              <div class="overlay"></div>
+              <div class="content">
+                <h3 class="capitalize">Brick Cleaning</h3>
+                <div class="service-content">
+                  <p>
+                    Over time and without proper routine cleaning, brick
+                    surfaces can suffer from black staining and erosion, which
+                    reduces their lifespan. Our power washing service is
+                    beneficial for your brick surfaces, and it cleans them
+                    deeply without weakening the structure. High-pressure
+                    washing can be too corrosive for brick surfaces, but we
+                    adjust our power washer’s pressure to make sure it removes
+                    all the dirt and stains without damaging the bricks. Our
+                    service provides long-lasting results and will make your
+                    property look beautiful.
+                  </p>
+                  <a href="#" class="tw-btn capitalize">Brick Cleaning</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -380,7 +445,10 @@
             class="wow animate__animated animate__zoomIn accordion"
           >
             <div class="icon"></div>
-            <h5>Do we have our own water supplie for service use?</h5>
+            <h5>
+              Do we have our own water supplie for service <br />
+              use?
+            </h5>
           </div>
           <div class="panel">
             <p>Yes</p>
@@ -514,6 +582,16 @@
                   <option value="Norwalk">Wilton</option>
                 </select>
               </div>
+              <button
+                style="
+                  background-color: black !important;
+                  padding-block: 7px !important;
+                "
+                type="submit"
+                class="tw-btn text-white w-full"
+              >
+                Next
+              </button>
             </form>
             <div class="wow animate__animated animate__backInRight img">
               <img src="assets/img/contactImg.png" alt="" />

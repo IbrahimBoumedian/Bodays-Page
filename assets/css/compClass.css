@@ -71,7 +71,7 @@
   scale: 2.3;
 }
 .logo:hover {
- opacity: .9;
+  opacity: 0.9;
 }
 .nav-link {
   font-size: 15px;
@@ -136,4 +136,30 @@
   transition: 0.3s ease-in-out;
   scale: 1.1;
   color: white !important;
+}
+
+.phone-btn {
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0;
+  color: white !important;
+  border-style: solid;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);  border-radius: 5px 5px 5px 5px;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+.quote-btn {
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0;
+  color: white !important;
+  border-style: solid;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 10px !important;
 }
